@@ -41,13 +41,13 @@ const App = React.createClass({
     } else if (gameArray.four === gameArray.five && gameArray.four ===gameArray.six && gameArray.four === 1){
       document.getElementById('gameOver').innerHTML="Game Over! Well done " + document.getElementById('player1').value
     } else if (gameArray.seven === gameArray.eight && gameArray.nine ===gameArray.seven && gameArray.seven === 1){
-      document.getElementById('gameOver').innerHTML="Game Over! ell done " + document.getElementById('player1').value
+      document.getElementById('gameOver').innerHTML="Game Over! Well done " + document.getElementById('player1').value
     } else if (gameArray.one === gameArray.four && gameArray.seven ===gameArray.one && gameArray.one === 1){
-      document.getElementById('gameOver').innerHTML="Game Over! ell done " + document.getElementById('player1').value
+      document.getElementById('gameOver').innerHTML="Game Over! Well done " + document.getElementById('player1').value
     } else if (gameArray.two === gameArray.five && gameArray.eight ===gameArray.two && gameArray.two === 1){
-      document.getElementById('gameOver').innerHTML="Game Over! ell done " + document.getElementById('player1').value
+      document.getElementById('gameOver').innerHTML="Game Over! Well done " + document.getElementById('player1').value
     } else if (gameArray.three === gameArray.six && gameArray.nine ===gameArray.three && gameArray.three === 1){
-      document.getElementById('gameOver').innerHTML="Game Over! ell done " + document.getElementById('player1').value
+      document.getElementById('gameOver').innerHTML="Game Over! Well done " + document.getElementById('player1').value
     } else if (gameArray.one === gameArray.five && gameArray.nine ===gameArray.one && gameArray.one === 1){
       document.getElementById('gameOver').innerHTML="Game Over! ell done " + document.getElementById('player1').value
     } else if (gameArray.three === gameArray.five && gameArray.seven ===gameArray.three && gameArray.three === 1){
