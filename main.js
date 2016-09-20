@@ -81,6 +81,7 @@ const App = React.createClass({
     console.log('submitted')
     document.getElementById("table").removeAttribute("hidden")
     document.getElementById("gameOver").removeAttribute("hidden")
+    document.getElementById("reset").removeAttribute("hidden")
     document.getElementById("gameOver").innerHTML=document.getElementById('player1').value + " goes first."
   },
 
@@ -90,6 +91,8 @@ const App = React.createClass({
 
       <div className = "container">
 
+      <div className="col-sm-4">
+        
       <h1>Tic Tac Toe</h1>
 
       <h2>Ready? Fight!</h2>
@@ -102,12 +105,14 @@ const App = React.createClass({
       <label htmlFor="players">Player 2:  </label>
       <input ref="player2" htmlFor="players" type="text" className="form-control" id="player2" defaultValue="Sue"  required/>
       <img src="https://4.bp.blogspot.com/-eGTrVsnjTKU/Vtv0gRps6JI/AAAAAAAAAFI/GHuO3wjcL3U/s1600/player2.png" alt=""  height='100' width='100' />
-      <hr/><button htmlFor="players" className="btn btn-lg btn-success" type="submit" onClick={this.unhide}>Submit Names</button>
-      <button htmlFor="players" className="btn btn-lg btn-warning" type="submit" onClick={this.reset}>Reset Game</button>
+      <br/><br/><button htmlFor="players" className="btn btn-lg btn-success" type="submit" onClick={this.unhide}>Submit Names</button>
+      <span>  </span><button id="reset" htmlFor="players" className="btn btn-lg btn-warning" type="submit" onClick={this.reset}>Reset Game</button>
       </form>
-      <hr/>
+      </div>
+
+      <div className="col-sm-4">
       <h1 className= "unhide" id="gameOver" hidden> Keep Playing!</h1>
-      <hr/>
+      <br/>
       <table id="table" className = "unhide" hidden>
 
       <tbody>
@@ -131,7 +136,7 @@ const App = React.createClass({
       </tbody>
 
       </table>
-
+      </div>
 
       </div>
 
