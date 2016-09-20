@@ -49,7 +49,7 @@ const App = React.createClass({
     } else if (gameArray.three === gameArray.six && gameArray.nine ===gameArray.three && gameArray.three === 1){
       document.getElementById('gameOver').innerHTML="Game Over! Well done " + document.getElementById('player1').value
     } else if (gameArray.one === gameArray.five && gameArray.nine ===gameArray.one && gameArray.one === 1){
-      document.getElementById('gameOver').innerHTML="Game Over! ell done " + document.getElementById('player1').value
+      document.getElementById('gameOver').innerHTML="Game Over! Well done " + document.getElementById('player1').value
     } else if (gameArray.three === gameArray.five && gameArray.seven ===gameArray.three && gameArray.three === 1){
       document.getElementById('gameOver').innerHTML="Game Over! Well done " + document.getElementById('player1').value
     } else if (gameArray.one === gameArray.two && gameArray.one === gameArray.three && gameArray.one === 2){
@@ -89,9 +89,9 @@ const App = React.createClass({
 
     return (
 
-      <div className = "container">
+      <div id="container" className = "container">
 
-      <div className="col-sm-4">
+      <div className="col-sm-6">
         
       <h1>Tic Tac Toe</h1>
 
@@ -106,11 +106,15 @@ const App = React.createClass({
       <input ref="player2" htmlFor="players" type="text" className="form-control" id="player2" defaultValue="Sue"  required/>
       <img src="https://4.bp.blogspot.com/-eGTrVsnjTKU/Vtv0gRps6JI/AAAAAAAAAFI/GHuO3wjcL3U/s1600/player2.png" alt=""  height='100' width='100' />
       <br/><br/><button htmlFor="players" className="btn btn-lg btn-success" type="submit" onClick={this.unhide}>Submit Names</button>
+      <br/>
+      <br/>
       <span>  </span><button id="reset" htmlFor="players" className="btn btn-lg btn-warning" type="submit" onClick={this.reset}>Reset Game</button>
       </form>
+      <br/>
+      <br/>
       </div>
 
-      <div className="col-sm-4">
+      <div className="col-sm-6">
       <h1 className= "unhide" id="gameOver" hidden> Keep Playing!</h1>
       <br/>
       <table id="table" className = "unhide" hidden>

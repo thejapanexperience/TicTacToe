@@ -1,3 +1,8 @@
+#container {
+  background-color: #aec5c7;
+  border-radius: 10px;
+}
+
 #table {
   height: 100%
   width: 100%;
@@ -6,56 +11,58 @@
 #one {
   border-bottom: 1px solid black;
   border-right: 1px solid black;
-  height: 100px
-  width: 100px;
+  background-color: orange;
+  margin: 20px;
 }
 #two {
   border-bottom: 1px solid black;
-  height: 100px
+  background-color: orange;
   width: 100px;
+  margin: 20px;
+
 }
 #three {
   border-bottom: 1px solid black;
   border-left: 1px solid black;
-  height: 100px
-  width: 100px;
+  background-color: orange;
+  margin: 20px;
 }
 #four {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   border-right: 1px solid black;
-  height: 100px
-  width: 100px;
+  background-color: orange;
+  margin: 20px;
 }
 #five {
   border: 1px solid black;
-  height: 100px
-  width: 100px;
+  background-color: orange;
+  margin: 20px;
 }
 #six {
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-top: 1px solid black;
-  height: 100px
-  width: 100px;
+  background-color: orange;
+  margin: 20px;
 }
 #seven {
   border-top: 1px solid black;
   border-right: 1px solid black;  
-  height: 100px
-  width: 100px;
+  background-color: orange;
+  margin: 20px;
 }
 #eight {
   border-top: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  height: 100px
-  width: 100px;
+  background-color: orange;
+  margin: 20px;
 }
 #nine {
   border-top: 1px solid black;
   border-left: 1px solid black;
-  height: 100px
-  width: 100px;
+  background-color: orange;
+  margin: 20px;
 }
 
